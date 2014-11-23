@@ -37,11 +37,24 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Stretch" />
             <Setter Property="Opacity" Value="0.5" />
-            <Setter Property="Margin" Value="0,0,25,0" />
+            <Setter Property="Margin" Value="0,0,-15,0" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="38" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+        </Style>
+
+        <Style TargetType="Button" x:Name="ButtonMainPage">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Opacity" Value="0.6" />
+            <Setter Property="Margin" Value="0,15,0,0" />
             <Setter Property="Foreground" Value="Black" />
             <Setter Property="FontSize" Value="30" />
             <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="Background" Value="RosyBrown" />
+            <Setter Property="Width" Value="400" />
         </Style>
 
         <DataTemplate x:Name="allProductsDataTemplate">

@@ -10,11 +10,15 @@
     d:DesignWidth="400">
     
     <StackPanel>
-        <Button x:ConnectionId='1' Content="Check Fridge"
-                                                    />
-        <Button Content="Products to EAT" 
-                />
-        <Button x:ConnectionId='2' Content="Consumed Products"
+        <Button x:ConnectionId='1' Content="Whaz in Fridge?"
+                                                    
+                Style="{StaticResource ButtonMainPage}"/>
+        
+        <Button Content="Expiring..."
+                Style="{StaticResource ButtonMainPage}"/>
+        
+        <Button x:ConnectionId='2' Content="Whaz I have eaten?"
+                Style="{StaticResource ButtonMainPage}"
                                                    />
     </StackPanel>
 </UserControl>

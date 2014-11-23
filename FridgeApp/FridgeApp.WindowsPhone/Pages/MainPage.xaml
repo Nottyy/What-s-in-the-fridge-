@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="MainPageRoot">
+    <Grid x:Name="MainPageRoot" Opacity="0.9">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -22,15 +22,30 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/main-page-background.jpg" />
+        </Grid.Background>
+
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        <StackPanel Grid.Row="0" Margin="19,0,0,30">
+            <TextBlock Text="What's in the fridge?" 
+                       Style="{StaticResource TextBlockHeading}" 
+                       Margin="0,12,0,0"/>
+
+            <TextBlock Text="So far, So hungry..." 
+                       Style="{StaticResource TextBlockPageHeading}" 
+                       Margin="0,12,0,0"/>
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
-        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <views:MainPageView></views:MainPageView>
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,0,19,0">
+            <Border Background="Azure"
+                    Opacity="0.5"
+                    BorderThickness="1"
+                    Height="280">
+                <views:MainPageView HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"/>
+            </Border>
         </Grid>
     </Grid>
 </Page>

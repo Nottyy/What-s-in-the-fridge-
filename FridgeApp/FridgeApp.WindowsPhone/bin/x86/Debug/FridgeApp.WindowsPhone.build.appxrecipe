@@ -76,6 +76,9 @@
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\fridge-background.jpg">
       <PackagePath>Images\fridge-background.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\main-page-background.jpg">
+      <PackagePath>Images\main-page-background.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\vegAndFruits.jpg">
       <PackagePath>Images\vegAndFruits.jpg</PackagePath>
     </AppxPackagedFile>

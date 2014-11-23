@@ -10,11 +10,15 @@
     d:DesignWidth="400">
     
     <StackPanel>
-        <Button Content="Check Fridge"
-                Click="NavigateToFridgeProductsPage"/>
-        <Button Content="Products to EAT" 
-                />
-        <Button Content="Consumed Products"
+        <Button Content="Whaz in Fridge?"
+                Click="NavigateToFridgeProductsPage"
+                Style="{StaticResource ButtonMainPage}"/>
+        
+        <Button Content="Expiring..."
+                Style="{StaticResource ButtonMainPage}"/>
+        
+        <Button Content="Whaz I have eaten?"
+                Style="{StaticResource ButtonMainPage}"
                 Click="NavigateToEatenProductsPage"/>
     </StackPanel>
 </UserControl>
