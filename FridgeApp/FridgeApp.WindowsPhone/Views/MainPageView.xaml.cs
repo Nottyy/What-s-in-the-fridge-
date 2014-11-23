@@ -13,6 +13,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using FridgeApp.Helpers;
+using System.Threading.Tasks;
+using Windows.UI.Popups;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -30,8 +33,15 @@ namespace FridgeApp.Views
             ((Frame)Window.Current.Content).Navigate(typeof(FridgeProductsPage));
         }
 
-        private void NavigateToEatenProductsPage(object sender, RoutedEventArgs e)
+        private async void NavigateToEatenProductsPage(object sender, RoutedEventArgs e)
         {
+            Task<bool> isConnected = CheckInternetConnection.CheckForInternetConnection();
+
+            if (!(await (isConnected)))
+            {
+                await new MessageDialog("You won't be able to proceed to the Eaten Products page! Check your internet connetion!").ShowAsync();
+                return;
+            }
             ((Frame)Window.Current.Content).Navigate(typeof(EatenProductsPage));
         }
     }

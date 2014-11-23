@@ -1,4 +1,5 @@
 ﻿using FridgeApp.Common;
+using FridgeApp.Helpers;
 using FridgeApp.Models;
 using FridgeApp.ViewModels;
 using SQLite;
@@ -214,6 +215,14 @@ namespace FridgeApp.Pages
 
         private async void ListViewElementHolding(object sender, HoldingRoutedEventArgs e)
         {
+            Task<bool> isConnected = CheckInternetConnection.CheckForInternetConnection();
+
+            if (!(await (isConnected)))
+            {
+                await new MessageDialog("You won't be able to mark the selected product as eaten! Check your internet connetion!").ShowAsync();
+                return;
+            }
+
             var frameworkElement = (FrameworkElement)e.OriginalSource;
             var holdedItem = ((Product)frameworkElement.DataContext);
 
