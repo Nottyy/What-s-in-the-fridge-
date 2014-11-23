@@ -23,7 +23,8 @@
         </Grid.RowDefinitions>
 
         <!-- Title Panel -->
-
+        <MediaElement x:Name="soundDeleteProduct" AudioCategory="GameEffects" Source="../Sounds/delete-product.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <MediaElement x:Name="soundEatenProduct" AudioCategory="GameEffects" Source="../Sounds/eaten-product.wav" AutoPlay="False" Visibility="Collapsed"/>
 
         <ScrollViewer Height="700"
                        Grid.Row="1">
@@ -51,7 +52,8 @@
                 <ListView x:ConnectionId='2' x:Name="listViewFirstShelve"
                           Width="800"
                                                           
-                      ItemsSource ="{Binding FirstShelveProducts}" 
+                                                             
+                          ItemsSource ="{Binding FirstShelveProducts}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>
 
@@ -64,6 +66,7 @@
                 <ListView x:ConnectionId='3' x:Name="listViewVegAndFruitShelve"
                           Width="800"
                                                           
+                                                             
                       ItemsSource ="{Binding VegAndFruitShelveProducts}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>
@@ -77,6 +80,7 @@
                 <ListView x:ConnectionId='4' x:Name="listViewDairyProductsShelve"
                           Width="800"
                                                           
+                                                             
                       ItemsSource ="{Binding DairyProductsShelve}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>
@@ -90,6 +94,7 @@
                 <ListView x:ConnectionId='5' x:Name="listViewDrinksShelve"
                           Width="800"
                                                           
+                                                             
                       ItemsSource ="{Binding DrinksShelveProducts}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>

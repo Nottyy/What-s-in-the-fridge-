@@ -19,6 +19,24 @@
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\FridgeApp.WindowsPhone.exe">
       <PackagePath>FridgeApp.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.Common.winmd">
+      <PackagePath>Microsoft.Advertising.Mobile.Common.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.Display.winmd">
+      <PackagePath>Microsoft.Advertising.Mobile.Display.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.winmd">
+      <PackagePath>Microsoft.Advertising.Mobile.UI.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Web\bootstrap.html">
+      <PackagePath>Microsoft.Advertising.Mobile.UI\Web\bootstrap.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Themes\Generic.xbf">
+      <PackagePath>Microsoft.Advertising.Mobile.UI\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Web\Ormma.js">
+      <PackagePath>Microsoft.Advertising.Mobile.UI\Web\Ormma.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.8.7.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
@@ -51,6 +69,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\vegAndFruits.jpg">
       <PackagePath>Images\vegAndFruits.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Sounds\add-product.wav">
+      <PackagePath>Sounds\add-product.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Sounds\delete-product.wav">
+      <PackagePath>Sounds\delete-product.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Sounds\eaten-product.wav">
+      <PackagePath>Sounds\eaten-product.wav</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

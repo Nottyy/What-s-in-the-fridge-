@@ -22,6 +22,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <MediaElement x:Name="soundAddProduct" AudioCategory="GameEffects" Source="../Sounds/add-product.wav" AutoPlay="False" Visibility="Collapsed"/>
+
         <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
             <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>

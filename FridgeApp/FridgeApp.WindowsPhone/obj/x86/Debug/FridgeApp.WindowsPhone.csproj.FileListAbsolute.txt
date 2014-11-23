@@ -157,3 +157,9 @@ D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\qualifiers.txt.intermediate
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\ProjectArchitectures.txt
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.Common.winmd
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.Common.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.Display.winmd
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.Display.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.UI.winmd
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.UI.xml

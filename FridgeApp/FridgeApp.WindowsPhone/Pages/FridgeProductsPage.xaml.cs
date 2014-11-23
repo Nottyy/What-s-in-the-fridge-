@@ -25,6 +25,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace FridgeApp.Pages
 {
+    
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -211,37 +212,53 @@ namespace FridgeApp.Pages
             ((Frame)Window.Current.Content).Navigate(typeof(AddProductPage), parameters);
         }
 
-        private async void listViewElementHolding(object sender, HoldingRoutedEventArgs e)
+        private async void ListViewElementHolding(object sender, HoldingRoutedEventArgs e)
         {
             var frameworkElement = (FrameworkElement)e.OriginalSource;
             var holdedItem = ((Product)frameworkElement.DataContext);
 
-            if (holdedItem != null)
+            await this.CheckProductCategoryAndRemoveEntry(holdedItem);
+            this.soundEatenProduct.Play();
+            //logic for parse
+        }
+
+        private async void ListViewDoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            
+            var frameworkElement = (FrameworkElement)e.OriginalSource;
+            var holdedItem = ((Product)frameworkElement.DataContext);
+
+            await this.CheckProductCategoryAndRemoveEntry(holdedItem);
+            this.soundDeleteProduct.Play();
+        }
+
+        private async Task CheckProductCategoryAndRemoveEntry(Product product)
+        {
+            if (product != null)
             {
-                switch (holdedItem.FridgeCategory)
+                switch (product.FridgeCategory)
                 {
                     case FridgeCategories.FirstShelve:
-                        ((ProductsViewModel)this.DataContext).FirstShelveProducts.Remove(holdedItem);
+                        ((ProductsViewModel)this.DataContext).FirstShelveProducts.Remove(product);
                         break;
                     case FridgeCategories.VegAndFruitShelve:
-                        ((ProductsViewModel)this.DataContext).VegAndFruitShelveProducts.Remove(holdedItem);
+                        ((ProductsViewModel)this.DataContext).VegAndFruitShelveProducts.Remove(product);
                         break;
                     case FridgeCategories.DrinksShelve:
-                        ((ProductsViewModel)this.DataContext).DrinksShelveProducts.Remove(holdedItem);
+                        ((ProductsViewModel)this.DataContext).DrinksShelveProducts.Remove(product);
                         break;
                     case FridgeCategories.AllProducts:
-                        ((ProductsViewModel)this.DataContext).AllProducts.Remove(holdedItem);
+                        ((ProductsViewModel)this.DataContext).AllProducts.Remove(product);
                         break;
                     case FridgeCategories.DairyShelve:
-                        ((ProductsViewModel)this.DataContext).DairyShelveProducts.Remove(holdedItem);
+                        ((ProductsViewModel)this.DataContext).DairyShelveProducts.Remove(product);
                         break;
                     default:
                         break;
                 }
-                
-                await this.DeleteProductAsync(holdedItem);
+
+                await this.DeleteProductAsync(product);
             }
         }
-
     }
 }

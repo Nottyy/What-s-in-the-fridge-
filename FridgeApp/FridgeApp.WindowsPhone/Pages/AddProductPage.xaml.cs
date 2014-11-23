@@ -195,6 +195,8 @@ namespace FridgeApp.Pages
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(DBNAME_ALL_PRODUCTS);
             await conn.InsertAsync(product);
 
+            this.soundAddProduct.Play();
+
             List<object> parameters = new List<object>() { this.DataContext };
             ((Frame)Window.Current.Content).Navigate(typeof(FridgeProductsPage), parameters);
         }

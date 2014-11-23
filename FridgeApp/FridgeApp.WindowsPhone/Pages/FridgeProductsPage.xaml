@@ -23,7 +23,8 @@
         </Grid.RowDefinitions>
 
         <!-- Title Panel -->
-
+        <MediaElement x:Name="soundDeleteProduct" AudioCategory="GameEffects" Source="../Sounds/delete-product.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <MediaElement x:Name="soundEatenProduct" AudioCategory="GameEffects" Source="../Sounds/eaten-product.wav" AutoPlay="False" Visibility="Collapsed"/>
 
         <ScrollViewer Height="700"
                        Grid.Row="1">
@@ -50,8 +51,9 @@
                 </Border>
                 <ListView x:Name="listViewFirstShelve"
                           Width="800"
-                          Holding="listViewElementHolding"
-                      ItemsSource ="{Binding FirstShelveProducts}" 
+                          Holding="ListViewElementHolding"
+                          DoubleTapped="ListViewDoubleTapped"
+                          ItemsSource ="{Binding FirstShelveProducts}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>
 
@@ -63,7 +65,8 @@
                 </Border>
                 <ListView x:Name="listViewVegAndFruitShelve"
                           Width="800"
-                          Holding="listViewElementHolding"
+                          Holding="ListViewElementHolding"
+                          DoubleTapped="ListViewDoubleTapped"
                       ItemsSource ="{Binding VegAndFruitShelveProducts}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>
@@ -76,7 +79,8 @@
                 </Border>
                 <ListView x:Name="listViewDairyProductsShelve"
                           Width="800"
-                          Holding="listViewElementHolding"
+                          Holding="ListViewElementHolding"
+                          DoubleTapped="ListViewDoubleTapped"
                       ItemsSource ="{Binding DairyProductsShelve}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>
@@ -89,7 +93,8 @@
                 </Border>
                 <ListView x:Name="listViewDrinksShelve"
                           Width="800"
-                          Holding="listViewElementHolding"
+                          Holding="ListViewElementHolding"
+                          DoubleTapped="ListViewDoubleTapped"
                       ItemsSource ="{Binding DrinksShelveProducts}" 
                       ItemTemplate="{StaticResource allProductsDataTemplate}">
                 </ListView>

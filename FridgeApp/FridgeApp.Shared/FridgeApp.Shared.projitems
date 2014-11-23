@@ -30,5 +30,8 @@
     <Content Include="$(MSBuildThisFileDirectory)Images\drinks.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\first-shelve.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\vegAndFruits.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Sounds\add-product.wav" />
+    <Content Include="$(MSBuildThisFileDirectory)Sounds\delete-product.wav" />
+    <Content Include="$(MSBuildThisFileDirectory)Sounds\eaten-product.wav" />
   </ItemGroup>
 </Project>
