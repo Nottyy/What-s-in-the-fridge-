@@ -56,6 +56,16 @@
             <Setter Property="Background" Value="RosyBrown" />
             <Setter Property="Width" Value="400" />
         </Style>
+        
+        <Style TargetType="TextBlock" x:Name="TextBlockOnShakePage">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Opacity" Value="0.95" />
+            <Setter Property="Margin" Value="0,15,0,0" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <!--<Setter Property="Width" Value="400" />-->
+            
+        </Style>
 
         <DataTemplate x:Name="allProductsDataTemplate">
 

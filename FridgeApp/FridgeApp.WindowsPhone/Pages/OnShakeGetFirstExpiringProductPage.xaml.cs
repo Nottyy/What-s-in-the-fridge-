@@ -1,14 +1,15 @@
 ﻿using FridgeApp.Common;
+using FridgeApp.Models;
+using FridgeApp.ViewModels;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Devices.Sensors;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
-using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -25,34 +26,22 @@ namespace FridgeApp.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class OnShakeGetFirstExpiringProductPage : Page
     {
+        public const string DBNAME_ALL_PRODUCTS = "allProductsDB";
+
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public Accelerometer Accelerometer { get; set; }
-
-        public MainPage()
+        public OnShakeGetFirstExpiringProductPage()
         {
             this.InitializeComponent();
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
-            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;            
-        }
+            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
 
-
-        async void accelerometer_Shaken(Accelerometer sender, AccelerometerShakenEventArgs args)
-        {
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                var b = 5;
-                 //if (!usedAccelerometer)
-                //    {
-                //        usedAccelerometer = true;
-                //        ((Frame)Window.Current.Content).Navigate(typeof(OnShakeGetFirstExpiringProductPage));
-                //    }
-            });
+            
         }
 
         /// <summary>
@@ -114,16 +103,42 @@ namespace FridgeApp.Pages
         /// </summary>
         /// <param name="e">Provides data for navigation methods and event
         /// handlers that cannot cancel the navigation request.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
 
-            this.Accelerometer = Accelerometer.GetDefault();
-            if (this.Accelerometer != null)
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(DBNAME_ALL_PRODUCTS);
+
+            // Retrieve Article
+            AsyncTableQuery<Product> query = conn.Table<Product>().Where(x => x.ExpirationDays > 0).OrderBy(x => x.ExpirationDays);
+            List<Product> result = await query.ToListAsync();
+
+            var firstExpiringProduct = result.First();
+            string frCategory = "";
+            switch (firstExpiringProduct.FridgeCategory)
             {
-                this.Accelerometer.Shaken += accelerometer_Shaken;
+                case FridgeCategories.FirstShelve:
+                    frCategory = "First Shelve";
+                    break;
+                case FridgeCategories.VegAndFruitShelve:
+                    frCategory = "Veg and Fruit Shelve";
+                    break;
+                case FridgeCategories.DrinksShelve:
+                    frCategory = "Drinks Shelve";
+                    break;
+                case FridgeCategories.AllProducts:
+                    break;
+                case FridgeCategories.DairyShelve:
+                    frCategory = "Dairy Shelve";
+                    break;
+                default:
+                    break;
             }
             
+            var viewModel = new FirstExpiringProductViewModel(firstExpiringProduct.Name, firstExpiringProduct.Description,
+                firstExpiringProduct.Quantity, firstExpiringProduct.DateAdded, firstExpiringProduct.ExpirationDays, frCategory);
+
+            this.DataContext = viewModel;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

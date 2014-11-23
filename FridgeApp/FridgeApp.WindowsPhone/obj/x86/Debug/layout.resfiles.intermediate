@@ -1,5 +1,6 @@
 Images\dairy.jpg
 Images\drinks.jpg
+Images\expiration.jpg
 Images\first-shelve.jpg
 Images\fridge-background.jpg
 Images\main-page-background.jpg
@@ -19,5 +20,6 @@ Pages\AddProductPage.xbf
 Pages\EatenProductsPage.xbf
 Pages\FridgeProductsPage.xbf
 Pages\MainPage.xbf
+Pages\OnShakeGetFirstExpiringProductPage.xbf
 Views\FridgeProductsView.xbf
 Views\MainPageView.xbf

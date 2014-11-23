@@ -44,5 +44,10 @@ namespace FridgeApp.Views
             }
             ((Frame)Window.Current.Content).Navigate(typeof(EatenProductsPage));
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ((Frame)Window.Current.Content).Navigate(typeof(OnShakeGetFirstExpiringProductPage));
+        }
     }
 }

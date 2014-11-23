@@ -27,11 +27,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AppEatenProductsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EatenProductsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FirstExpiringProductViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Images\dairy.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\drinks.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\expiration.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\first-shelve.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\fridge-background.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\main-page-background.jpg" />

@@ -241,7 +241,7 @@ namespace FridgeApp.Pages
             
             await eatenProduct.SaveAsync();
 
-            MessageDialog dialogSuccess = new MessageDialog(string.Format("You have eaten the \"{0}\"!", holdedItem.Name));
+            MessageDialog dialogSuccess = new MessageDialog(string.Format("You have successfully marked the product \"{0}\" as eaten!", holdedItem.Name));
             await dialogSuccess.ShowAsync();
         }
 

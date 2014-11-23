@@ -15,6 +15,7 @@
                 Style="{StaticResource ButtonMainPage}"/>
         
         <Button Content="Expiring..."
+                Click="Button_Click"
                 Style="{StaticResource ButtonMainPage}"/>
         
         <Button Content="Whaz I have eaten?"

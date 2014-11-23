@@ -14,10 +14,11 @@
                                                     
                 Style="{StaticResource ButtonMainPage}"/>
         
-        <Button Content="Expiring..."
+        <Button x:ConnectionId='2' Content="Expiring..."
+                                    
                 Style="{StaticResource ButtonMainPage}"/>
         
-        <Button x:ConnectionId='2' Content="Whaz I have eaten?"
+        <Button x:ConnectionId='3' Content="Whaz I have eaten?"
                 Style="{StaticResource ButtonMainPage}"
                                                    />
     </StackPanel>

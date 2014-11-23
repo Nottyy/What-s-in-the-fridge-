@@ -13,6 +13,8 @@
     <RootPropertyPathName Name="DairyProductsShelve" />
     <RootPropertyPathName Name="VegAndFruitShelveProducts" />
     <RootPropertyPathName Name="FirstShelveProducts" />
+    <RootPropertyPathName Name="Fridge" />
+    <RootPropertyPathName Name="PurchasedOn" />
     <RootPropertyPathName Name="AllProducts" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -160,6 +162,7 @@
       <RootProperty Name="Child" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="FridgeApp.Pages.FridgeProductsPage" />
     <RootType FullName="FridgeApp.Views.MainPageView">
@@ -167,6 +170,7 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="FridgeApp.Pages.MainPage" />
+    <RootType FullName="FridgeApp.Pages.OnShakeGetFirstExpiringProductPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>

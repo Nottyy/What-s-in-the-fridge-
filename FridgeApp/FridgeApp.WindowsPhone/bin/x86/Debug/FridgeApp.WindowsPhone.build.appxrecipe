@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\drinks.jpg">
       <PackagePath>Images\drinks.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\expiration.jpg">
+      <PackagePath>Images\expiration.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\first-shelve.jpg">
       <PackagePath>Images\first-shelve.jpg</PackagePath>
     </AppxPackagedFile>
@@ -105,6 +108,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\OnShakeGetFirstExpiringProductPage.xbf">
+      <PackagePath>Pages\OnShakeGetFirstExpiringProductPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Views\FridgeProductsView.xbf">
       <PackagePath>Views\FridgeProductsView.xbf</PackagePath>

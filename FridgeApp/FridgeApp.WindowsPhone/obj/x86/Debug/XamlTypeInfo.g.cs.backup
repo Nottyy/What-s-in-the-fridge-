@@ -148,7 +148,7 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[13];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "FridgeApp.Pages.AddProductPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -161,9 +161,11 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
             _typeNameTable[9] = "FridgeApp.Pages.FridgeProductsPage";
             _typeNameTable[10] = "FridgeApp.Views.MainPageView";
             _typeNameTable[11] = "FridgeApp.Pages.MainPage";
-            _typeNameTable[12] = "FridgeApp.Views.FridgeProductsView";
+            _typeNameTable[12] = "Windows.Devices.Sensors.Accelerometer";
+            _typeNameTable[13] = "FridgeApp.Pages.OnShakeGetFirstExpiringProductPage";
+            _typeNameTable[14] = "FridgeApp.Views.FridgeProductsView";
 
-            _typeTable = new global::System.Type[13];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::FridgeApp.Pages.AddProductPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -176,7 +178,9 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
             _typeTable[9] = typeof(global::FridgeApp.Pages.FridgeProductsPage);
             _typeTable[10] = typeof(global::FridgeApp.Views.MainPageView);
             _typeTable[11] = typeof(global::FridgeApp.Pages.MainPage);
-            _typeTable[12] = typeof(global::FridgeApp.Views.FridgeProductsView);
+            _typeTable[12] = typeof(global::Windows.Devices.Sensors.Accelerometer);
+            _typeTable[13] = typeof(global::FridgeApp.Pages.OnShakeGetFirstExpiringProductPage);
+            _typeTable[14] = typeof(global::FridgeApp.Views.FridgeProductsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -217,7 +221,8 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
         private object Activate_9_FridgeProductsPage() { return new global::FridgeApp.Pages.FridgeProductsPage(); }
         private object Activate_10_MainPageView() { return new global::FridgeApp.Views.MainPageView(); }
         private object Activate_11_MainPage() { return new global::FridgeApp.Pages.MainPage(); }
-        private object Activate_12_FridgeProductsView() { return new global::FridgeApp.Views.FridgeProductsView(); }
+        private object Activate_13_OnShakeGetFirstExpiringProductPage() { return new global::FridgeApp.Pages.OnShakeGetFirstExpiringProductPage(); }
+        private object Activate_14_FridgeProductsView() { return new global::FridgeApp.Views.FridgeProductsView(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -308,15 +313,31 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
             case 11:   //  FridgeApp.Pages.MainPage
                 userType = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_11_MainPage;
+                userType.AddMemberName("Accelerometer");
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  FridgeApp.Views.FridgeProductsView
+            case 12:   //  Windows.Devices.Sensors.Accelerometer
+                userType = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 13:   //  FridgeApp.Pages.OnShakeGetFirstExpiringProductPage
+                userType = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_OnShakeGetFirstExpiringProductPage;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  FridgeApp.Views.FridgeProductsView
                 userType = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_12_FridgeProductsView;
+                userType.Activator = Activate_14_FridgeProductsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -408,14 +429,34 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
             var that = (global::FridgeApp.Pages.FridgeProductsPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_6_MainPage_NavigationHelper(object instance)
+        private object get_6_MainPage_Accelerometer(object instance)
+        {
+            var that = (global::FridgeApp.Pages.MainPage)instance;
+            return that.Accelerometer;
+        }
+        private void set_6_MainPage_Accelerometer(object instance, object Value)
+        {
+            var that = (global::FridgeApp.Pages.MainPage)instance;
+            that.Accelerometer = (global::Windows.Devices.Sensors.Accelerometer)Value;
+        }
+        private object get_7_MainPage_NavigationHelper(object instance)
         {
             var that = (global::FridgeApp.Pages.MainPage)instance;
             return that.NavigationHelper;
         }
-        private object get_7_MainPage_DefaultViewModel(object instance)
+        private object get_8_MainPage_DefaultViewModel(object instance)
         {
             var that = (global::FridgeApp.Pages.MainPage)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_9_OnShakeGetFirstExpiringProductPage_NavigationHelper(object instance)
+        {
+            var that = (global::FridgeApp.Pages.OnShakeGetFirstExpiringProductPage)instance;
+            return that.NavigationHelper;
+        }
+        private object get_10_OnShakeGetFirstExpiringProductPage_DefaultViewModel(object instance)
+        {
+            var that = (global::FridgeApp.Pages.OnShakeGetFirstExpiringProductPage)instance;
             return that.DefaultViewModel;
         }
 
@@ -462,16 +503,34 @@ namespace FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_5_FridgeProductsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "FridgeApp.Pages.MainPage.Accelerometer":
+                userType = (global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FridgeApp.Pages.MainPage");
+                xamlMember = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlMember(this, "Accelerometer", "Windows.Devices.Sensors.Accelerometer");
+                xamlMember.Getter = get_6_MainPage_Accelerometer;
+                xamlMember.Setter = set_6_MainPage_Accelerometer;
+                break;
             case "FridgeApp.Pages.MainPage.NavigationHelper":
                 userType = (global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FridgeApp.Pages.MainPage");
                 xamlMember = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FridgeApp.Common.NavigationHelper");
-                xamlMember.Getter = get_6_MainPage_NavigationHelper;
+                xamlMember.Getter = get_7_MainPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "FridgeApp.Pages.MainPage.DefaultViewModel":
                 userType = (global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FridgeApp.Pages.MainPage");
                 xamlMember = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FridgeApp.Common.ObservableDictionary");
-                xamlMember.Getter = get_7_MainPage_DefaultViewModel;
+                xamlMember.Getter = get_8_MainPage_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FridgeApp.Pages.OnShakeGetFirstExpiringProductPage.NavigationHelper":
+                userType = (global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FridgeApp.Pages.OnShakeGetFirstExpiringProductPage");
+                xamlMember = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FridgeApp.Common.NavigationHelper");
+                xamlMember.Getter = get_9_OnShakeGetFirstExpiringProductPage_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FridgeApp.Pages.OnShakeGetFirstExpiringProductPage.DefaultViewModel":
+                userType = (global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FridgeApp.Pages.OnShakeGetFirstExpiringProductPage");
+                xamlMember = new global::FridgeApp.FridgeApp_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FridgeApp.Common.ObservableDictionary");
+                xamlMember.Getter = get_10_OnShakeGetFirstExpiringProductPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
