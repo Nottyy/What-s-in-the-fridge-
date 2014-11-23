@@ -20,15 +20,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\EnumHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EatenProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\FridgeCategories.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AppEatenProductsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EatenProductsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Images\dairy.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\drinks.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\first-shelve.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\fridge-background.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\vegAndFruits.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Sounds\add-product.wav" />
     <Content Include="$(MSBuildThisFileDirectory)Sounds\delete-product.wav" />

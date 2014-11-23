@@ -36,3 +36,44 @@ D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\obj\x86\Debug\q
 D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\obj\x86\Debug\ProjectArchitectures.txt
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\App.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\Pages\FridgeProductsPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\Pages\MainPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\FridgeApp.Windows.xr.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\FridgeApp.Windows.exe
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\FridgeApp.Windows.pdb
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\resources.pri
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\AppxManifest.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\FridgeApp.Windows.build.appxrecipe
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\Parse.dll
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\bin\x86\Debug\Parse.WinRT.dll
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\FridgeApp.Windows.csprojResolveAssemblyReference.cache
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\App.g.i.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\App.g.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\FridgeProductsPage.g.i.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\FridgeProductsPage.g.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\MainPage.g.i.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\MainPage.g.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\App.xaml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\FridgeProductsPage.xaml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\MainPage.xaml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\App.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\FridgeProductsPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\Pages\MainPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\XamlSaveStateFile.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\FridgeApp.Windows.exe
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\FridgeApp.Windows.pdb
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\FridgeApp.Windows.csproj.GenerateResource.Cache
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\priconfig.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\priconfig.xml.intermediate
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\layout.resfiles
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\layout.resfiles.intermediate
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\resources.resfiles
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\resources.resfiles.intermediate
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\pri.resfiles
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\pri.resfiles.intermediate
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\qualifiers.txt
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\qualifiers.txt.intermediate
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\obj\x86\Debug\ProjectArchitectures.txt

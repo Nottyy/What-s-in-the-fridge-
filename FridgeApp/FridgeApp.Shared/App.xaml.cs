@@ -1,4 +1,6 @@
-﻿using FridgeApp.Pages;
+﻿using FridgeApp.Models;
+using FridgeApp.Pages;
+using Parse;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,7 +40,12 @@ namespace FridgeApp
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+            ParseObject.RegisterSubclass<EatenProduct>();
+            ParseClient.Initialize("VmdeIMceo2POPySGBPNO3yk6JkLFsHtRXIWZ8pR9", "Ju2J5cl2UrOOuSNQCbqCvp1RxrhuWqm3h92mFB4b");
+            
         }
+
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
@@ -46,8 +53,9 @@ namespace FridgeApp
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
+
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {

@@ -219,7 +219,21 @@ namespace FridgeApp.Pages
 
             await this.CheckProductCategoryAndRemoveEntry(holdedItem);
             this.soundEatenProduct.Play();
+
             //logic for parse
+            EatenProduct eatenProduct = new EatenProduct
+            {
+                Name = holdedItem.Name,
+                Description = holdedItem.Description,
+                ExpirationDays = holdedItem.ExpirationDays,
+                Quantity = holdedItem.Quantity,
+                DatePurchased = holdedItem.DateAdded
+            };
+            
+            await eatenProduct.SaveAsync();
+
+            MessageDialog dialogSuccess = new MessageDialog(string.Format("You have eaten the \"{0}\"!", holdedItem.Name));
+            await dialogSuccess.ShowAsync();
         }
 
         private async void ListViewDoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
@@ -230,6 +244,9 @@ namespace FridgeApp.Pages
 
             await this.CheckProductCategoryAndRemoveEntry(holdedItem);
             this.soundDeleteProduct.Play();
+
+            MessageDialog dialogSuccess = new MessageDialog(string.Format("You have successfully removed \"{0}\" from the fridge!", holdedItem.Name));
+            await dialogSuccess.ShowAsync();
         }
 
         private async Task CheckProductCategoryAndRemoveEntry(Product product)

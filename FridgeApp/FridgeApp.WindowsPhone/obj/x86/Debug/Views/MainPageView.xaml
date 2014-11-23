@@ -11,9 +11,11 @@
     
     <StackPanel>
         <Button x:ConnectionId='1' Content="Check Fridge"
-                                    />
-        <Button Content="Products to EAT" />
-        <Button Content="Consumed Products" />
+                                                    />
+        <Button Content="Products to EAT" 
+                />
+        <Button x:ConnectionId='2' Content="Consumed Products"
+                                                   />
     </StackPanel>
 </UserControl>
 

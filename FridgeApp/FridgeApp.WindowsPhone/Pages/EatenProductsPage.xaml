@@ -1,0 +1,139 @@
+﻿<Page
+    x:Class="FridgeApp.Pages.EatenProductsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FridgeApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+
+        <!--TODO: Content should be placed within the following grid-->
+        <ScrollViewer Height="700"
+                      Grid.Row="0"
+                      Margin="10,9.5,19,0"
+                      x:Name="ContentRoot">
+            <StackPanel Opacity="0.8">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="../Images/fridge-background.jpg" />
+                </StackPanel.Background>
+                
+                <TextBlock Text="What's in the fridge?" 
+                       Style="{StaticResource TextBlockHeading}" 
+                       Margin="0,12,0,0"/>
+
+                <TextBlock Text="Eaten Products" 
+                       Style="{StaticResource TextBlockPageHeading}" 
+                       Margin="0,12,0,5"/>
+
+                <ListView 
+                  SelectionMode="None"
+                  ItemsSource="{Binding EatenProducts}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical"
+                                        Background="Azure"
+                                        Opacity="0.7"
+                                        Width="900">
+                                <Grid Margin="0,0,0,10"
+                                      HorizontalAlignment="Stretch">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="{Binding Name}"
+                                           Grid.Row="0"
+                                           Grid.Column="0"
+                                           TextAlignment="Left"
+                                           HorizontalAlignment="Left"
+                                           Foreground="Red"
+                                           FontSize="35"
+                                           FontFamily="Comic Sans MS"
+                                           Margin="20,0,0,0"
+                                           FontWeight="Bold"/>
+
+                                    <TextBlock Grid.Row="0"
+                                               Grid.Column="1"
+                                               TextAlignment="Right"
+                                               HorizontalAlignment="Right"
+                                               Margin="15 10 0 0"
+                                               FontFamily="Comic Sans MS"
+                                               Foreground="DarkOliveGreen"
+                                               FontWeight="ExtraBlack">
+                                        
+                                        <Run Text="Qty "
+                                             FontSize="15"
+                                             FontWeight="Normal"/>
+                                        <Run Text="{Binding Quantity}"
+                                             FontSize="20"/>
+
+                                    </TextBlock>
+                                </Grid>
+                                
+                                
+                                <TextBlock HorizontalAlignment="Stretch"
+                                           FontFamily="Comic Sans MS"
+                                           Margin="35,0,0,0"
+                                           Foreground="Black"
+                                           FontWeight="Bold">
+                                    <Run Text="Eated on: "
+                                         FontSize="18"
+                                         FontWeight="Normal"/>
+                                    
+                                    <Run Text="{Binding PurchasedDate}"
+                                         FontSize="18"
+                                         />
+                                </TextBlock>
+                                
+                                <TextBlock HorizontalAlignment="Stretch"
+                                           Text="{Binding Description}"
+                                           FontSize="20"
+                                           FontFamily="Comic Sans MS"
+                                           Foreground="Black"
+                                           FontWeight="Normal"
+                                           Margin="35,0,0,0"/>
+
+                                <TextBlock HorizontalAlignment="Stretch"
+                                           FontSize="20"
+                                           FontFamily="Comic Sans MS"
+                                           Foreground="Black"
+                                           FontWeight="Normal"
+                                           Margin="35,0,0,0">
+                                    
+                                    <Run Text="Expiration period: "/>
+                                    
+                                    <Run Text="{Binding ExpiringAfter}"
+                                         FontSize="22"
+                                         Foreground="DarkOliveGreen"
+                                         />
+                                    <Run Text=" days"
+                                         />
+                                    
+                                </TextBlock>
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

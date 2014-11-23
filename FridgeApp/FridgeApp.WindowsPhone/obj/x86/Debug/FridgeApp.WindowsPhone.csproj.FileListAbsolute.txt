@@ -163,3 +163,11 @@ D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.Display.xml
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.UI.winmd
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Microsoft.Advertising.Mobile.UI.xml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Parse.dll
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Parse.WinRT.dll
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\FridgeApp.WindowsPhone.csprojResolveAssemblyReference.cache
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\EatenProductsPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\EatenProductsPage.g.i.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\EatenProductsPage.g.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\EatenProductsPage.xaml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\EatenProductsPage.xbf

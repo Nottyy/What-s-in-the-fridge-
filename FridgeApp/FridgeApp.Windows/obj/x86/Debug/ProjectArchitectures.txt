@@ -1,1 +1,1 @@
-D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\FridgeApp.Windows.csproj;x86
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Windows\FridgeApp.Windows.csproj;x86

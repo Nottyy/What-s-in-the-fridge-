@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.winmd">
       <PackagePath>Microsoft.Advertising.Mobile.UI.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\Libs\Parse.dll">
+      <PackagePath>Parse.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\Libs\Parse.WinRT.dll">
+      <PackagePath>Parse.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Web\bootstrap.html">
       <PackagePath>Microsoft.Advertising.Mobile.UI\Web\bootstrap.html</PackagePath>
     </AppxPackagedFile>
@@ -67,6 +73,9 @@
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\first-shelve.jpg">
       <PackagePath>Images\first-shelve.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\fridge-background.jpg">
+      <PackagePath>Images\fridge-background.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Images\vegAndFruits.jpg">
       <PackagePath>Images\vegAndFruits.jpg</PackagePath>
     </AppxPackagedFile>
@@ -84,6 +93,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\AddProductPage.xbf">
       <PackagePath>Pages\AddProductPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\EatenProductsPage.xbf">
+      <PackagePath>Pages\EatenProductsPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\FridgeProductsPage.xbf">
       <PackagePath>Pages\FridgeProductsPage.xbf</PackagePath>

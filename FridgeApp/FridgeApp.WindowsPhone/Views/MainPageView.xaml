@@ -11,8 +11,10 @@
     
     <StackPanel>
         <Button Content="Check Fridge"
-                Click="Button_Click"/>
-        <Button Content="Products to EAT" />
-        <Button Content="Consumed Products" />
+                Click="NavigateToFridgeProductsPage"/>
+        <Button Content="Products to EAT" 
+                />
+        <Button Content="Consumed Products"
+                Click="NavigateToEatenProductsPage"/>
     </StackPanel>
 </UserControl>

@@ -1,6 +1,7 @@
 Images\dairy.jpg
 Images\drinks.jpg
 Images\first-shelve.jpg
+Images\fridge-background.jpg
 Images\vegAndFruits.jpg
 Sounds\add-product.wav
 Sounds\delete-product.wav
@@ -14,6 +15,7 @@ Assets\WideLogo.scale-240.png
 App.xbf
 FridgeApp.WindowsPhone.xr.xml
 Pages\AddProductPage.xbf
+Pages\EatenProductsPage.xbf
 Pages\FridgeProductsPage.xbf
 Pages\MainPage.xbf
 Views\FridgeProductsView.xbf

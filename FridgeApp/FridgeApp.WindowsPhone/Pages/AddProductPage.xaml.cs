@@ -196,6 +196,8 @@ namespace FridgeApp.Pages
             await conn.InsertAsync(product);
 
             this.soundAddProduct.Play();
+            MessageDialog dialogSuccess = new MessageDialog(string.Format("You have successfully added \"{0}\" to the fridge!", product.Name));
+            await dialogSuccess.ShowAsync();
 
             List<object> parameters = new List<object>() { this.DataContext };
             ((Frame)Window.Current.Content).Navigate(typeof(FridgeProductsPage), parameters);

@@ -5,5 +5,7 @@
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.advertising.mobile.display\8.1\references\commonconfiguration\neutral\microsoft.advertising.mobile.display.winmd" HashGuid="cc0fb2e7-7a64-f70e-2997-2ad4fbf1cad0" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.advertising.mobile.display\8.1\references\commonconfiguration\neutral\microsoft.advertising.mobile.ui.winmd" HashGuid="b3d8dc37-2e80-b28f-127b-3083e011fcaf" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="d:\githubrepository\what-s-in-the-fridge-\libs\parse.dll" HashGuid="4aa23e2f-e4a0-423c-41b6-d3a8bf370a51" />
+    <ReferenceAssembly PathName="d:\githubrepository\what-s-in-the-fridge-\libs\parse.winrt.dll" HashGuid="686a4480-5b84-291b-04f2-3ed7db81ad6f" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

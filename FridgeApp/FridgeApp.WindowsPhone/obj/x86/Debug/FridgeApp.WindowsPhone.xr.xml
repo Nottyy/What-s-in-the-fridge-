@@ -6,6 +6,9 @@
     <RootPropertyPathName Name="ExpirationDays" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="ImagePath" />
+    <RootPropertyPathName Name="EatenProducts" />
+    <RootPropertyPathName Name="ExpiringAfter" />
+    <RootPropertyPathName Name="PurchasedDate" />
     <RootPropertyPathName Name="DrinksShelveProducts" />
     <RootPropertyPathName Name="DairyProductsShelve" />
     <RootPropertyPathName Name="VegAndFruitShelveProducts" />
@@ -21,13 +24,14 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="TextAlignment" />
-      <RootProperty Name="Text" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
       <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -72,7 +76,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -82,6 +88,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Setter">
@@ -104,9 +111,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Name" />
@@ -125,25 +135,28 @@
     <RootType FullName="FridgeApp.Pages.AddProductPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="ImageSource" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="Holding" />
+      <RootEvent Name="DoubleTapped" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="FridgeApp.Pages.EatenProductsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="Background" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Child" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="Width" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootEvent Name="Holding" />
-      <RootEvent Name="DoubleTapped" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="FridgeApp.Pages.FridgeProductsPage" />
     <RootType FullName="FridgeApp.Views.MainPageView" />
     <RootType FullName="FridgeApp.Pages.MainPage" />

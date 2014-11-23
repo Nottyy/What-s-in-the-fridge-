@@ -25,9 +25,14 @@ namespace FridgeApp.Views
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NavigateToFridgeProductsPage(object sender, RoutedEventArgs e)
         {
             ((Frame)Window.Current.Content).Navigate(typeof(FridgeProductsPage));
+        }
+
+        private void NavigateToEatenProductsPage(object sender, RoutedEventArgs e)
+        {
+            ((Frame)Window.Current.Content).Navigate(typeof(EatenProductsPage));
         }
     }
 }
