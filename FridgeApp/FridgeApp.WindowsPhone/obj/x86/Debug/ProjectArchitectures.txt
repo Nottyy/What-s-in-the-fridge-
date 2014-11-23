@@ -1,1 +1,1 @@
-D:\Github Repository\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\FridgeApp.WindowsPhone.csproj;x86
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\FridgeApp.WindowsPhone.csproj;x86
