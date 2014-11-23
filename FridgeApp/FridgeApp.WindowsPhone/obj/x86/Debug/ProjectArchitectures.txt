@@ -1,0 +1,1 @@
+D:\Github Repository\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\FridgeApp.WindowsPhone.csproj;x86

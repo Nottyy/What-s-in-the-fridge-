@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ANTONIOPC</Machine>
+    <WindowsUser>Antonio</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>04568c8f-fd99-4c6c-8f4f-9d396081d487</PackageIdentityName>
+    <IntermediateOutputPath>D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>677804A6CE9304421122A7E9DA615EFC1050E8604E892225C052B4AB118105B6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>04568c8f-fd99-4c6c-8f4f-9d396081d487_1.0.0.0_neutral__xqpvf01wvxxne</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>04568c8f-fd99-4c6c-8f4f-9d396081d487_xqpvf01wvxxne!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>04568c8f-fd99-4c6c-8f4f-9d396081d487</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Antonio</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-21T13:58:32.005</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\FridgeApp.Windows.exe">
+      <PackagePath>FridgeApp.Windows.exe</PackagePath>
+      <Modified>2014-11-21T13:58:30.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-21T13:58:30.622</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\Views\MainPageView.xbf">
+      <PackagePath>Views\MainPageView.xbf</PackagePath>
+      <Modified>2014-11-21T13:58:30.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\Pages\MainPage.xbf">
+      <PackagePath>Pages\MainPage.xbf</PackagePath>
+      <Modified>2014-11-21T13:58:30.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\FridgeApp.Windows.xr.xml">
+      <PackagePath>FridgeApp.Windows.xr.xml</PackagePath>
+      <Modified>2014-11-21T13:58:30.609</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-21T13:58:31.601</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ANTONIOPC</Machine>
+    <WindowsUser>Antonio</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0178b0a2-ca34-4633-96b1-7e173f71ffb6</PackageIdentityName>
+    <IntermediateOutputPath>D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\FridgeApp.WindowsPhone.exe">
+      <PackagePath>FridgeApp.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\Views\MainPageView.xbf">
+      <PackagePath>Views\MainPageView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\Pages\FridgeProductsPage.xbf">
+      <PackagePath>Pages\FridgeProductsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\Pages\MainPage.xbf">
+      <PackagePath>Pages\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\Views\FridgeProductsView.xbf">
+      <PackagePath>Views\FridgeProductsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\FridgeApp.WindowsPhone.xr.xml">
+      <PackagePath>FridgeApp.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Visual Studio Directory\FridgeApp\FridgeApp\FridgeApp.WindowsPhone\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
