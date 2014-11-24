@@ -90,6 +90,9 @@
     <Compile Include="Pages\EatenProductsPage.xaml.cs">
       <DependentUpon>EatenProductsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ExpiringProductsPage.xaml.cs">
+      <DependentUpon>ExpiringProductsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FridgeProductsPage.xaml.cs">
       <DependentUpon>FridgeProductsPage.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EatenProductsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ExpiringProductsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

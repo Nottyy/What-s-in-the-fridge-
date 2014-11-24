@@ -20,6 +20,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ChangeForeGroundColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ExpiredProductsConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\CheckInternetConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\EnumHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\EatenProduct.cs" />
@@ -28,6 +30,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AppEatenProductsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EatenProductsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ExpiringProductsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FirstExpiringProductViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductsViewModel.cs" />
   </ItemGroup>
@@ -41,6 +44,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Images\vegAndFruits.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Sounds\add-product.wav" />
     <Content Include="$(MSBuildThisFileDirectory)Sounds\delete-product.wav" />
+    <Content Include="$(MSBuildThisFileDirectory)Sounds\eaten-product-quantity.wav" />
     <Content Include="$(MSBuildThisFileDirectory)Sounds\eaten-product.wav" />
   </ItemGroup>
 </Project>

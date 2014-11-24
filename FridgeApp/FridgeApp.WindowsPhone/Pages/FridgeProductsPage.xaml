@@ -4,10 +4,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:FridgeApp.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:converters="using:FridgeApp.Converters"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:FridgeApp.Views"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Resources>
+        <converters:ChangeForeGroundColorConverter x:Key="ExpiredProductsConverter" />
+    </Page.Resources>
 
     <Grid x:Name="FridgeProductsPageRoot">
 
@@ -25,6 +30,7 @@
         <!-- Title Panel -->
         <MediaElement x:Name="soundDeleteProduct" AudioCategory="GameEffects" Source="../Sounds/delete-product.wav" AutoPlay="False" Visibility="Collapsed"/>
         <MediaElement x:Name="soundEatenProduct" AudioCategory="GameEffects" Source="../Sounds/eaten-product.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <MediaElement x:Name="soundEatenProductQuantity" AudioCategory="GameEffects" Source="../Sounds/eaten-product-quantity.wav" AutoPlay="False" Visibility="Collapsed"/>
 
         <ScrollViewer Height="700"
                        Grid.Row="1">
@@ -38,8 +44,8 @@
                 <TextBlock Text="What's in the fridge?"
                            Grid.Row="0"
                            Style="{StaticResource TextBlockHeading}"/>
-                
-                <TextBlock Text="Eaten Products" 
+
+                <TextBlock Text="Fridge supply" 
                        Style="{StaticResource TextBlockPageHeading}" 
                        Margin="0,12,0,5"/>
 
@@ -55,6 +61,8 @@
                 </Border>
                 <ListView x:Name="listViewFirstShelve"
                           Width="800"
+                          IsItemClickEnabled="True"
+                          ItemClick="listViewFirstShelve_ItemClick"
                           Holding="ListViewElementHolding"
                           DoubleTapped="ListViewDoubleTapped"
                           ItemsSource ="{Binding FirstShelveProducts}" 
@@ -69,6 +77,8 @@
                 </Border>
                 <ListView x:Name="listViewVegAndFruitShelve"
                           Width="800"
+                           IsItemClickEnabled="True"
+                          ItemClick="listViewFirstShelve_ItemClick"
                           Holding="ListViewElementHolding"
                           DoubleTapped="ListViewDoubleTapped"
                       ItemsSource ="{Binding VegAndFruitShelveProducts}" 
@@ -83,6 +93,8 @@
                 </Border>
                 <ListView x:Name="listViewDairyProductsShelve"
                           Width="800"
+                           IsItemClickEnabled="True"
+                          ItemClick="listViewFirstShelve_ItemClick"
                           Holding="ListViewElementHolding"
                           DoubleTapped="ListViewDoubleTapped"
                       ItemsSource ="{Binding DairyProductsShelve}" 
@@ -97,6 +109,8 @@
                 </Border>
                 <ListView x:Name="listViewDrinksShelve"
                           Width="800"
+                           IsItemClickEnabled="True"
+                          ItemClick="listViewFirstShelve_ItemClick"
                           Holding="ListViewElementHolding"
                           DoubleTapped="ListViewDoubleTapped"
                       ItemsSource ="{Binding DrinksShelveProducts}" 

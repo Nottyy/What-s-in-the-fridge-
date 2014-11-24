@@ -24,69 +24,75 @@
 
         <MediaElement x:Name="soundAddProduct" AudioCategory="GameEffects" Source="../Sounds/add-product.wav" AutoPlay="False" Visibility="Collapsed"/>
 
-        <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-        </StackPanel>
-
         <!--TODO: Content should be placed within the following grid-->
         <StackPanel Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <!--<Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>-->
+
+            <StackPanel.Background>
+                <ImageBrush ImageSource="../Images/fridge-background.jpg" />
+            </StackPanel.Background>
+
+            <TextBlock Text="What's in the fridge?" 
+                       Style="{StaticResource TextBlockHeading}" 
+                       Margin="0,12,0,0"/>
+
+            <TextBlock Text="Eaten Products" 
+                       Style="{StaticResource TextBlockPageHeading}" 
+                       Margin="0,12,0,5"/>
 
             <TextBlock Text="Location: "
                        Grid.Row="0"
-                       Grid.Column="0"/>
+                       Grid.Column="0"
+                       Style="{StaticResource TextBlockLabelForAddingProduct}"/>
 
             <ComboBox Name="FridgeCategoriesCombobox" 
                       Margin="5" 
-                      SelectedItem="0" 
                       Grid.Row="0"
-                      Grid.Column="1"/>
+                      Grid.Column="1"
+                      Background="Ivory"
+                      Foreground="Black"
+                      FontWeight="ExtraBold"
+                      Opacity="0.9"/>
 
             <TextBlock Text="Name: "
                        Grid.Row="1"
-                       Grid.Column="0"/>
+                       Grid.Column="0"
+                       Style="{StaticResource TextBlockLabelForAddingProduct}"/>
 
             <TextBox Name="ProductName"
                      PlaceholderText="Type your product name..."
                      TextAlignment="Justify" 
                      FontSize="25"
                      Grid.Row="1" 
-                     Grid.Column="1" />
+                     Grid.Column="1"
+                     Style="{StaticResource TextBoxLabels}"/>
 
             <TextBlock Text="Description: "
                        Grid.Row="2"
-                       Grid.Column="0"/>
+                       Grid.Column="0"
+                       Style="{StaticResource TextBlockLabelForAddingProduct}"/>
 
             <TextBox Name="ProductDescription"
                      PlaceholderText="Type your product description..."
                      TextAlignment="Justify" 
                      FontSize="25"
                      Grid.Row="2" 
-                     Grid.Column="1" />
+                     Grid.Column="1"
+                     Style="{StaticResource TextBoxLabels}"/>
 
             <TextBlock Text="Quantity: "
                        Grid.Row="3"
-                       Grid.Column="0"/>
+                       Grid.Column="0"
+                       Style="{StaticResource TextBlockLabelForAddingProduct}"/>
 
             <TextBox Name="ProductQuantity"
                      PlaceholderText="Type your product quantity..."
                      TextAlignment="Justify" 
                      FontSize="25"
                      Grid.Row="3" 
-                     Grid.Column="1" />
-            <Grid>
+                     Grid.Column="1"
+                     Style="{StaticResource TextBoxLabels}"/>
+            <Grid Opacity="0.8"
+                  Margin="0,10,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                 </Grid.RowDefinitions>
@@ -96,19 +102,35 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Row="0"
-                            Grid.Column="0">
-                    <DatePicker x:Name="purchaseDatePicker" Header="Purchase Date"/>
+                            Grid.Column="0"
+                            Background="Black">
+                    <DatePicker x:Name="purchaseDatePicker" 
+                                Header="Purchase Date"
+                                Background="Black"
+                                Foreground="White">
+                    </DatePicker>
                 </StackPanel>
 
                 <StackPanel Grid.Row="0"
-                            Grid.Column="1">
-                    <DatePicker x:Name="expirationDatePicker" Header="Expiration Date"/>
+                            Grid.Column="1"
+                            Background="Black">
+                    <DatePicker x:Name="expirationDatePicker" 
+                                Header="Expiration Date"
+                                FontSize="30"
+                                Background="Black"
+                                Foreground="White"/>
                 </StackPanel>
             </Grid>
             
             <Button x:ConnectionId='1' Content="Save Product"
                     HorizontalAlignment="Stretch"
-                                         Margin="0,0,-0.333,0"/>
+                    VerticalAlignment="Bottom"
+                    Background="Khaki"
+                    Foreground="Black"
+                    FontWeight="ExtraBold"
+                    Opacity="0.8"
+                    Margin="0,30,0,0"
+                                         />
         </StackPanel>
     </Grid>
 </Page>

@@ -1,14 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Quantity" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="ExpirationDays" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="ImagePath" />
+    <RootPropertyPathName Name="DateAdded" />
     <RootPropertyPathName Name="EatenProducts" />
     <RootPropertyPathName Name="ExpiringAfter" />
     <RootPropertyPathName Name="PurchasedDate" />
+    <RootPropertyPathName Name="ExpiringProducts" />
     <RootPropertyPathName Name="DrinksShelveProducts" />
     <RootPropertyPathName Name="DairyProductsShelve" />
     <RootPropertyPathName Name="VegAndFruitShelveProducts" />
@@ -21,6 +26,22 @@
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="Resources" />
     </RootType>
+    <RootType FullName="FridgeApp.Converters.ExpiredProductsConverter" />
+    <RootType FullName="FridgeApp.Converters.ChangeForeGroundColorConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontFamily" />
@@ -30,10 +51,9 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="CharacterSpacing" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -44,16 +64,14 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Opacity" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
       <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Control">
-      <RootProperty Name="Background" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.UIElement">
       <RootProperty Name="Opacity" />
@@ -68,8 +86,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
-      <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="ChildrenTransitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -94,7 +112,21 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontWeight" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
@@ -102,6 +134,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
@@ -112,29 +145,22 @@
       <RootProperty Name="AutoPlay" />
       <RootProperty Name="Visibility" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="Opacity" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="SelectedItem" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Name" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="FontSize" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Header" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="FridgeApp.Pages.AddProductPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
@@ -142,19 +168,18 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="ImageSource" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Width" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootEvent Name="ItemClick" />
       <RootEvent Name="Holding" />
       <RootEvent Name="DoubleTapped" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="FridgeApp.Pages.EatenProductsPage" />
+    <RootType FullName="FridgeApp.Pages.ExpiringProductsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="Background" />
       <RootProperty Name="Opacity" />
@@ -170,6 +195,12 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="FridgeApp.Pages.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="FridgeApp.Pages.OnShakeGetFirstExpiringProductPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />

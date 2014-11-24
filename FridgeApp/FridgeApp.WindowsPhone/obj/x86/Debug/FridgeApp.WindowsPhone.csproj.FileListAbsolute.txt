@@ -176,3 +176,8 @@ D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\OnShakeGetFirstExpiringProductPage.g.cs
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\OnShakeGetFirstExpiringProductPage.xaml
 D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\OnShakeGetFirstExpiringProductPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\ExpiringProductsPage.xbf
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\ExpiringProductsPage.g.i.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\ExpiringProductsPage.g.cs
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\ExpiringProductsPage.xaml
+D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\obj\x86\Debug\Pages\ExpiringProductsPage.xbf

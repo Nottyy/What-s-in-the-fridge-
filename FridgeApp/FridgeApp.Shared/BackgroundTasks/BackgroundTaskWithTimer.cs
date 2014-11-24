@@ -22,8 +22,8 @@ namespace FridgeApp.BackgroundTasks
             await BackgroundExecutionManager.RequestAccessAsync();
             var access = BackgroundExecutionManager.GetAccessStatus();
 
-            var dialog = new MessageDialog(access.ToString());
-            await dialog.ShowAsync();
+            //var dialog = new MessageDialog(access.ToString());
+            //await dialog.ShowAsync();
 
             switch (access)
             {
@@ -54,13 +54,14 @@ namespace FridgeApp.BackgroundTasks
               TaskEntryPoint = "FridgeApp.BackgroundTasks.BackgroundTaskWithTimer"
             };
 
-            var trigger = new TimeTrigger(15, false);
+            var trigger = new TimeTrigger(15,false);
             builder.SetTrigger(trigger);
 
             var cond1 = new SystemCondition(SystemConditionType.InternetAvailable);
             builder.AddCondition(cond1);
 
             BackgroundTaskRegistration task = builder.Register();
+            
         }
 
         public async void Run(IBackgroundTaskInstance taskInstance)
@@ -70,26 +71,24 @@ namespace FridgeApp.BackgroundTasks
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(DBNAME_ALL_PRODUCTS);
 
             // Retrieve Article
-            AsyncTableQuery<Product> query = conn.Table<Product>().Where(x => x.ExpirationDays > 0).OrderBy(x => x.ExpirationDays);
+            AsyncTableQuery<Product> query = conn.Table<Product>().Where(x => x.ExpirationDays > 0);
             List<Product> result = await query.ToListAsync();
 
             List<string> expiredProductsNames = new List<string>();
             foreach (var pr in result)
             {
-                
+
                 if ((pr.ExpirationDate - currentDateTime).TotalDays <= 0)
                 {
-                    expiredProductsNames.Add(pr);
+                    expiredProductsNames.Add(pr.Name);
                 }
             }
 
             if (expiredProductsNames.Count > 0)
             {
                 string show = string.Format("Expired products: {0}", string.Join(", ", expiredProductsNames));
-                ShowToast(, true);
+                ShowToast(show, true);
             }
-
-            
         }
 
         public static ToastNotification ShowToast(string content, bool show)

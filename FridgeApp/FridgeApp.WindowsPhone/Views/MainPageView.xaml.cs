@@ -35,9 +35,10 @@ namespace FridgeApp.Views
 
         private async void NavigateToEatenProductsPage(object sender, RoutedEventArgs e)
         {
-            Task<bool> isConnected = CheckInternetConnection.CheckForInternetConnection();
+            bool isConnected = await CheckInternetConnection.CheckForInternetConnection();
+            
 
-            if (!(await (isConnected)))
+            if (!isConnected)
             {
                 await new MessageDialog("You won't be able to proceed to the Eaten Products page! Check your internet connetion!").ShowAsync();
                 return;
@@ -48,6 +49,11 @@ namespace FridgeApp.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ((Frame)Window.Current.Content).Navigate(typeof(OnShakeGetFirstExpiringProductPage));
+        }
+
+        private void NavigateToExpiringProductsPage(object sender, RoutedEventArgs e)
+        {
+            ((Frame)Window.Current.Content).Navigate(typeof(ExpiringProductsPage));
         }
     }
 }

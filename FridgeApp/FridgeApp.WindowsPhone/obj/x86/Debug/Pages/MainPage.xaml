@@ -42,7 +42,7 @@
             <Border Background="Azure"
                     Opacity="0.5"
                     BorderThickness="1"
-                    Height="280">
+                    Height="480">
                 <views:MainPageView HorizontalAlignment="Center"
                                     VerticalAlignment="Top"/>
             </Border>

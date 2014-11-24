@@ -15,11 +15,15 @@
                 Style="{StaticResource ButtonMainPage}"/>
         
         <Button Content="Expiring..."
-                Click="Button_Click"
+                Click="NavigateToExpiringProductsPage"
                 Style="{StaticResource ButtonMainPage}"/>
         
         <Button Content="Whaz I have eaten?"
                 Style="{StaticResource ButtonMainPage}"
                 Click="NavigateToEatenProductsPage"/>
+        
+        <Button Content="Check onShake?"
+                Style="{StaticResource ButtonMainPage}"
+                Click="Button_Click"/>
     </StackPanel>
 </UserControl>

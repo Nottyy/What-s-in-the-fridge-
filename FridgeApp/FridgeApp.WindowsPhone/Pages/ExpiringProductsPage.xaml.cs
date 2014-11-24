@@ -1,14 +1,15 @@
 ﻿using FridgeApp.Common;
+using FridgeApp.Models;
+using FridgeApp.ViewModels;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Devices.Sensors;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
-using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -25,36 +26,20 @@ namespace FridgeApp.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class ExpiringProductsPage : Page
     {
+        public const string DBNAME_ALL_PRODUCTS = "allProductsDB";
+
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public Accelerometer Accelerometer { get; set; }
-
-        public MainPage()
+        public ExpiringProductsPage()
         {
             this.InitializeComponent();
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
-
-            Loaded += MainPage_Loaded;
-        }
-
-        void MainPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            BackgroundTasks.BackgroundTaskWithTimer.Register();
-        }
-
-
-        async void accelerometer_Shaken(Accelerometer sender, AccelerometerShakenEventArgs args)
-        {
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                ((Frame)Window.Current.Content).Navigate(typeof(OnShakeGetFirstExpiringProductPage));
-            });
         }
 
         /// <summary>
@@ -116,16 +101,20 @@ namespace FridgeApp.Pages
         /// </summary>
         /// <param name="e">Provides data for navigation methods and event
         /// handlers that cannot cancel the navigation request.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
 
-            this.Accelerometer = Accelerometer.GetDefault();
-            if (this.Accelerometer != null)
-            {
-                this.Accelerometer.Shaken += accelerometer_Shaken;
-            }
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(DBNAME_ALL_PRODUCTS);
 
+            // Retrieve Article
+            AsyncTableQuery<Product> query = conn.Table<Product>().OrderBy(x => x.ExpirationDate).Take(10);
+            List<Product> result = await query.ToListAsync();
+
+            var viewModel = new ExpiringProductsViewModel();
+            viewModel.ExpiringProducts = result;
+
+            this.DataContext = viewModel;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

@@ -29,7 +29,7 @@
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
       <Extensions>
-        <Extension Category="windows.backgroundTasks" EntryPoint="FridgeApp.BackgroundTasks">
+        <Extension Category="windows.backgroundTasks" EntryPoint="FridgeApp.BackgroundTasks.BackgroundTaskWithTimer">
           <BackgroundTasks>
             <Task Type="timer" />
           </BackgroundTasks>

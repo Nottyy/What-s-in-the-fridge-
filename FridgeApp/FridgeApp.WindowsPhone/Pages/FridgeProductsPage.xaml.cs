@@ -175,12 +175,12 @@ namespace FridgeApp.Pages
             // Create a Articles list
             var list = new List<Product>()
             {
-                new Product("BobChorba", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(150),"Bobeca e strashen", 1, FridgeCategories.FirstShelve),
-                new Product("Banani", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(10),"hapvam banan", 1, FridgeCategories.VegAndFruitShelve),
-                new Product("Whiskey", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(2),"Pih si", 1, FridgeCategories.DrinksShelve),
-                new Product("BobChorba", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(150),"Bobeca e strashen", 1, FridgeCategories.FirstShelve),
-                new Product("Banani", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(10),"hapvam banan", 1, FridgeCategories.VegAndFruitShelve),
-                new Product("Whiskey", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(2),"Pih si", 1, FridgeCategories.DrinksShelve)
+                new Product("BobChorba", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(15),"Bobeca e strashen", 1, FridgeCategories.FirstShelve),
+                new Product("Banani", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(10),"hapvam banan", 44, FridgeCategories.VegAndFruitShelve),
+                new Product("Whiskey", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(2),"Piq", 1, FridgeCategories.DrinksShelve),
+                new Product("BobChorba", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(-15),"Bobeca e unikalen", 1, FridgeCategories.FirstShelve),
+                new Product("Banani", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(-10),"hapvam banan", 1, FridgeCategories.VegAndFruitShelve),
+                new Product("Whiskey", "../Images/dairy.jpg", DateTime.Now,DateTime.Now.AddDays(2),"Blue label", 1, FridgeCategories.DrinksShelve)
                 
             };
 
@@ -284,6 +284,39 @@ namespace FridgeApp.Pages
                 }
 
                 await this.DeleteProductAsync(product);
+            }
+        }
+
+        private async void listViewFirstShelve_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var clickedItem = ((Product)e.ClickedItem);
+            if (clickedItem.Quantity - 1 <= 0)
+            {
+                await this.CheckProductCategoryAndRemoveEntry(clickedItem);
+                this.soundEatenProductQuantity.Play();
+                return;
+            }
+            clickedItem.Quantity--;
+            await UpdateProductQuantityAsync(clickedItem, clickedItem.Quantity);
+            this.soundEatenProductQuantity.Play();
+
+            //update clicked item quantity
+        }
+
+        private async Task UpdateProductQuantityAsync(Product product, double quantity)
+        {
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(DBNAME_ALL_PRODUCTS);
+
+            // Retrieve Product
+            var prod = await conn.Table<Product>()
+                .Where(x => x.ID == product.ID).FirstOrDefaultAsync();
+            if (prod != null)
+            {
+                // Modify Product
+                //prod.Quantity = quantity;
+
+                // Update record
+                await conn.UpdateAsync(prod);
             }
         }
     }

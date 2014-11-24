@@ -94,6 +94,9 @@
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Sounds\delete-product.wav">
       <PackagePath>Sounds\delete-product.wav</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Sounds\eaten-product-quantity.wav">
+      <PackagePath>Sounds\eaten-product-quantity.wav</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.Shared\Sounds\eaten-product.wav">
       <PackagePath>Sounds\eaten-product.wav</PackagePath>
     </AppxPackagedFile>
@@ -105,6 +108,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\EatenProductsPage.xbf">
       <PackagePath>Pages\EatenProductsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\ExpiringProductsPage.xbf">
+      <PackagePath>Pages\ExpiringProductsPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GithubRepository\What-s-in-the-fridge-\FridgeApp\FridgeApp.WindowsPhone\bin\x86\Debug\Pages\FridgeProductsPage.xbf">
       <PackagePath>Pages\FridgeProductsPage.xbf</PackagePath>

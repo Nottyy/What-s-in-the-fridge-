@@ -25,9 +25,12 @@
             <ImageBrush ImageSource="../Images/expiration.jpg" />
         </Grid.Background>
 
-
         <!--TODO: Content should be placed within the following grid-->
         <StackPanel Grid.Row="0" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <Rectangle Fill="Black" Opacity="0.5" 
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch"/>
+            
             <TextBlock Text="What's in the fridge?" 
                        Style="{StaticResource TextBlockHeading}" 
                        Margin="0,12,0,0"/>
@@ -52,6 +55,25 @@
                     HorizontalAlignment="Stretch">
 
                 <TextBlock Style="{StaticResource TextBlockOnShakePage}"
+                           FontSize="30"
+                           FontWeight="ExtraBold"
+                           Foreground="Red">
+                    
+                    <Run Text="Expiring in: "/>
+                                    
+                    <Run Text="{Binding ExpiringAfter}"
+                            FontSize="62"
+                            Foreground="Red"
+                            />
+                    
+                    <Run Text=" days"/>
+                </TextBlock>
+            </Border>
+            
+            <Border BorderThickness="2"
+                    HorizontalAlignment="Stretch">
+
+                <TextBlock Style="{StaticResource TextBlockOnShakePage}"
                            FontSize="23"
                            FontWeight="ExtraBold"
                            Foreground="Black">
@@ -62,25 +84,6 @@
                             FontSize="26"
                             Foreground="DarkOliveGreen"
                             />
-                </TextBlock>
-            </Border>
-
-            <Border BorderThickness="2"
-                    HorizontalAlignment="Stretch">
-
-                <TextBlock Style="{StaticResource TextBlockOnShakePage}"
-                           FontSize="23"
-                           FontWeight="ExtraBold"
-                           Foreground="Black">
-                    
-                    <Run Text="Expiring in: "/>
-                                    
-                    <Run Text="{Binding ExpiringAfter}"
-                            FontSize="62"
-                            Foreground="Red"
-                            />
-                    
-                    <Run Text=" days"/>
                 </TextBlock>
             </Border>
 
