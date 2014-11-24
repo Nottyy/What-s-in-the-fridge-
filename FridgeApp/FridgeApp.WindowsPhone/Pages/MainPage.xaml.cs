@@ -38,7 +38,14 @@ namespace FridgeApp.Pages
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
-            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;            
+            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+
+            Loaded += MainPage_Loaded;
+        }
+
+        void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            BackgroundTasks.BackgroundTaskWithTimer.Register();
         }
 
 
